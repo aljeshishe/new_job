@@ -1,0 +1,19 @@
+site_name: new_job
+site_description: Sample project generated from Jace's Python Template.
+site_author: Aleksei Grachev
+
+repo_url: https://github.com/aljeshishe/new_job
+edit_uri: https://github.com/aljeshishe/new_job/edit/main/docs
+
+theme: readthedocs
+
+markdown_extensions:
+  - codehilite
+
+nav:
+  - Home: index.md
+  - Advanced: advanced.md
+  - About:
+    - Release Notes: about/changelog.md
+    - Contributor Guide: about/contributing.md
+    - License: about/license.md
