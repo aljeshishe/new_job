@@ -1,12 +1,8 @@
-LOG_LEVEL = 'DEBUG'
-BOT_NAME = 'glassdoor_spider'
+LOG_LEVEL = "INFO"
+BOT_NAME = "glassdoor_spider"
 
-# SPIDER_MODULES = ['glassdoor_spider']
-# NEWSPIDER_MODULE = 'glassdoor_spider'
-
-CONCURRENT_REQUESTS_PER_DOMAIN = 2
-CONCURRENT_REQUESTS_PER_IP = 2
-CONCURRENT_REQUESTS = 2
+# SPIDER_MODULES = ["glassdoor_spider"]
+# NEWSPIDER_MODULE = "glassdoor_spider"
 
 CONCURRENT_REQUESTS_PER_DOMAIN = 5
 CONCURRENT_REQUESTS_PER_IP = 5
@@ -28,7 +24,7 @@ AUTOTHROTTLE_TARGET_CONCURRENCY = 2.0
 LOGSTATS_INTERVAL = 20
 # FEED_EXPORT_BATCH_ITEM_COUNT = 100
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'glassdoor_spider (+http://www.yourdomain.com)'
+#USER_AGENT = "glassdoor_spider (+http://www.yourdomain.com)"
 FEEDS = {
     "results/items_%(time)s.json": {"format": "jsonl"},
 }
@@ -56,33 +52,33 @@ FEEDS = {
 
 # Override the default request headers:
 #DEFAULT_REQUEST_HEADERS = {
-#   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-#   'Accept-Language': 'en',
+#   "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+#   "Accept-Language": "en",
 #}
 
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 # SPIDER_MIDDLEWARES = {
-#    'glassdoor.middlewares.LoggingDownloaderMiddleware': 543,
+#    "glassdoor.middlewares.LoggingDownloaderMiddleware": 543,
 # }
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
-    'glassdoor.middlewares.LoggingDownloaderMiddleware': 1000,
+    "glassdoor.middlewares.LoggingDownloaderMiddleware": 1000,
 }
 REQUEST_RESPONSE_DEBUG = False
 REQUEST_RESPONSE_BODY_DEBUG = False
 # Enable or disable extensions
 # See https://docs.scrapy.org/en/latest/topics/extensions.html
 #EXTENSIONS = {
-#    'scrapy.extensions.telnet.TelnetConsole': None,
+#    "scrapy.extensions.telnet.TelnetConsole": None,
 #}
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 # ITEM_PIPELINES = {
-#     'glassdoor_spider.lib.pipelines.ResultsDirPipeline': 300,
+#     "glassdoor_spider.lib.pipelines.ResultsDirPipeline": 300,
 # }
 
 
@@ -90,11 +86,11 @@ REQUEST_RESPONSE_BODY_DEBUG = False
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html#httpcache-middleware-settings
 #HTTPCACHE_ENABLED = True
 #HTTPCACHE_EXPIRATION_SECS = 0
-#HTTPCACHE_DIR = 'httpcache'
+#HTTPCACHE_DIR = "httpcache"
 #HTTPCACHE_IGNORE_HTTP_CODES = []
-#HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+#HTTPCACHE_STORAGE = "scrapy.extensions.httpcache.FilesystemCacheStorage"
 
 # Set settings whose default value is deprecated to a future-proof value
-REQUEST_FINGERPRINTER_IMPLEMENTATION = '2.7'
-TWISTED_REACTOR = 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'
+REQUEST_FINGERPRINTER_IMPLEMENTATION = "2.7"
+TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
 PARAMS = {}
