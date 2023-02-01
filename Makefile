@@ -1,5 +1,5 @@
-PROJECT := new_job
-PACKAGE := new_job
+PROJECT := glassdoor
+PACKAGE := glassdoor
 MODULES := $(wildcard $(PACKAGE)/*.py)
 
 .PHONY: repo-init
