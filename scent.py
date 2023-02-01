@@ -12,7 +12,7 @@ else:
     notify = Notifier.notify
 
 
-watch_paths = ["new_job", "tests"]
+watch_paths = ["glassdoor", "tests"]
 
 
 class Options:
