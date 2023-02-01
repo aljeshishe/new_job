@@ -28,9 +28,9 @@ dev: install .clean-test ## Continuously run all CI tasks when files chanage
 run: install ## Start the program
 	poetry run python $(PACKAGE)/__main__.py
 
-.PHONY: shell
-shell: install ## Launch an IPython session
-	poetry run ipython --ipython-dir=notebooks
+.PHONY: notebook
+notebook: install ## Launch an IPython session
+	poetry run  jupyter notebook --notebook-dir=notebooks
 
 # SYSTEM DEPENDENCIES #########################################################
 
