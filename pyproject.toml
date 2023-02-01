@@ -4,7 +4,7 @@ name = "new_job"
 version = "0.0"
 description = "Sample project generated from Jace's Python Template."
 
-packages = [{ include = "new_job" }]
+packages = [{ include = "glassdoor" }]
 
 license = "MIT"
 authors = ["Aleksei Grachev <aljeshishe@gmail.com>"]
@@ -33,6 +33,15 @@ python = "^3.9.13"
 # TODO: Remove these and add your library's requirements
 click = "*"
 minilog = "*"
+requests = "^2.28.2"
+scrapy = "^2.7.1"
+jsonpath-ng = "^1.5.3"
+pandas = "^1.5.3"
+jupyter = "^1.0.0"
+rootpath = "^0.1.1"
+kaleido = "0.2.1"
+dtale = "^2.11.0"
+pandas-utils = {git = "https://github.com/aljeshishe/pandas_utils"}
 
 [tool.poetry.dev-dependencies]
 
@@ -71,7 +80,7 @@ ipython = "^7.12.0"
 
 [tool.poetry.scripts]
 
-new_job = "new_job.cli:main"
+glassdoor = "glassdoor.cli:main"
 
 [tool.black]
 
